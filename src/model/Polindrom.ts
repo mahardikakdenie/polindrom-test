@@ -6,7 +6,7 @@ const polindromSchema = new mongoose.Schema({
         required: true,
     },
     isPolindrom: {
-        type: String,
+        type: Boolean,
         required: true,
     },
 }, {timestamps: true}); // Untuk menambahkan timestamps (createdAt dan updatedAt)

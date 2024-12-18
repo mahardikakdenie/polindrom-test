@@ -7,7 +7,7 @@ export const createPolindrom = async (sentence: string) => {
 			cleanedSentence === cleanedSentence.split('').reverse().join('');
 		const polindrom = await Polindrom.create({
 			sentence,
-			isPolindrom: isPolindrom,
+			isPolindrom: isPolindrom ? true : false,
 		});
         console.log("🚀 ~ createPolindrom ~ polindrom:", polindrom)
         
